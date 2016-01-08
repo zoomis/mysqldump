@@ -1,0 +1,24 @@
+# Database account information
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=abc123
+
+# Logging Server
+LOG_SERVER=
+LOG_USER=logger
+KEY_FILE=logger.key
+TARGET=/home/logger/openstack
+
+# Logging parameter
+# Frequency for dump db (sec)
+FREQUENCY=60
+# Duration for dump period (sec)
+DURATION=3600
+
+# Dump database
+#DATABASES=nova,neutron,keystone
+DATABASES=nova
+EXCLUDED_TABLES=keystone-token
+
+#screen
+SCREEN_NAME=mysqldump
